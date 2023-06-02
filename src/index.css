@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(245, 245, 245, 0.75);
+    border: 1px solid rgba(29, 29, 29, 0.125);
+}
+
+.shadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.text-shadow{
+    text-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+.head{
+    background: url(/images/pexels-jane-doan-916904.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    animation: slide 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    -webkit-animation: slide 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.sub {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    animation: slide 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    -webkit-animation: slide 2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes slide {
+    to {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+}
+
+img{
+    display: inline-block;
+    max-width: 100%;
+}
+
+.marquee {
+    display: flex;
+    background-color: #000000;
+    overflow: hidden;
+    padding: .3em;
+}
+.marquee h5 {
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 0 11rem;
+    color: white;
+    letter-spacing: 1px;
+    animation: moveR 6000ms linear infinite;
+}
+@keyframes moveR {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+
+.main{
+    height: 550px;
+}
+
+.title{
+    background: url(images/pexels-polina-tankilevitch-4110226.jpg);
+    background-size: cover;
+    background-position: start;
+}
+
+.second{
+    margin-top: 550px;
+}
+.bg{
+    height: 700px;
+    background: url(images/pexels-jane-doan-793785.jpg);
+    background-size: cover;
+}
+
+.form{
+    position: absolute;
+    top: 130px;
+    right: 0;
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    padding: 2.5em;
+    padding-right: 5em;
+    margin-bottom: 1em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.type, textarea{
+    padding: 1em;
+    width: 600px;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
